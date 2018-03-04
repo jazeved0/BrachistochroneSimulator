@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="LWJGL">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jar/AppleJavaExtensions.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/asm-debug-all.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/jinput.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/laf-plugin-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/laf-widget-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/log4j-api-2.0-beta9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/lwjgl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/lwjgl-debug.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/lwjgl_test.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/lwjgl_util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/lwjgl_util_applet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/lzma.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/substance-7.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jar/trident-7.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/lib/native" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>

@@ -73,21 +73,21 @@ public abstract class SimulationMode {
     public void renderTick() {
         float hueStep = 0.5f / sims.length;
         for (int i = 0; i < sims.length; ++i) {
-            RenderUtils.drawLineLoop(sims[i].getCurve().getDisplayPoints(), RenderUtils.getColorForHue(i * hueStep), 2f);
+            RenderUtils.drawLineLoop(sims[i].getCurve().getDisplayPoints(), RenderUtils.getColorForHue(0.5f + i * hueStep), 4f);
         }
 
-        RenderUtils.drawDot(A, 0.05f, Color.WHITE, true);
-        RenderUtils.drawDot(B, 0.05f, Color.WHITE, true);
+        RenderUtils.drawDot(A, 0.06f, Color.BLACK);
+        RenderUtils.drawDot(B, 0.06f, Color.BLACK);
 
         for (int i = 0; i < sims.length; ++i) {
-            RenderUtils.drawDot(sims[i].getPointMassPosition(), 0.1f, RenderUtils.getColorForHue(0.5f + i * hueStep), true);
+            RenderUtils.drawDot(sims[i].getPointMassPosition(), 0.1f, RenderUtils.getColorForHue(i * hueStep));
         }
 
         GL11.glPushMatrix(); {
             GL11.glEnable(GL11.GL_BLEND);
             GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
             RenderUtils.renderTexture(A_label, (float)A.x - 0.1f, (float)A.y + 0.14f, 0.2f, 0.2f);
-            RenderUtils.renderTexture(B_label, (float)B.x - 0.1f, (float)B.y - 0.37f, 0.2f, 0.2f);
+            RenderUtils.renderTexture(B_label, (float)B.x - 0.1f, (float)B.y - 0.32f, 0.2f, 0.2f);
             GL11.glDisable(GL11.GL_BLEND);
         } GL11.glPopMatrix();
     }

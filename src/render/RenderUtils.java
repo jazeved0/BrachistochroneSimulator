@@ -8,18 +8,12 @@ import java.awt.*;
 @SuppressWarnings("WeakerAccess")
 public class RenderUtils {
     public static Color getColorForHue(float hue) {
-        return Color.getHSBColor(hue, 1.0f, 0.9f);
+        return Color.getHSBColor(hue, 1.0f, 0.83f);
     }
 
-    public static void drawDot(Vector2d pointMassPosition, float radius, Color color, boolean hasStroke) {
+    public static void drawDot(Vector2d pointMassPosition, float radius, Color color) {
         GL11.glColor3f(color.getRed() / 255f, color.getGreen() / 255f, color.getBlue() / 255f);
         drawCircle((float)pointMassPosition.x, (float)pointMassPosition.y, radius, 12, true, 0.0f);
-
-        if(hasStroke) {
-            // Darker border
-            GL11.glColor3f(color.getRed() / 510f, color.getGreen() / 510f, color.getBlue() / 510f);
-            drawCircle((float)pointMassPosition.x, (float)pointMassPosition.y, radius, 12, false, 2.0f);
-        }
     }
 
     public static void drawLineLoop(Vector2d[] points, Color color, float width) {

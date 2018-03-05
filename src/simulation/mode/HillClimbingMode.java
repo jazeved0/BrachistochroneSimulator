@@ -38,7 +38,12 @@ public class HillClimbingMode extends SimulationMode {
         if(depth > maxDepth) {
             int index = t[0] < t[1] ? 0 : 1;
             System.out.println(String.format("Fastest: %s; t=%f", sims[index].getCurve().getLabel(), t[index]));
-            return; // Don't go past the max depth
+
+            // Reset to the initial hill climbing seed
+            currentCenter = new Vector2d(A.x + 2.5d, A.y - 1.97872d); // limit at the circle tangent to the vertical at A
+            currentBreadth = 1.3d;
+            sims = setupNewTrek(A, B, currentCenter, currentBreadth);
+            depth = 0;
         }
 
         // Reduce the breadth for the next trek

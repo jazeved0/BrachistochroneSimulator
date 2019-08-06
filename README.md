@@ -18,7 +18,7 @@ Using basic physics calculations, the time it takes for an object to travel from
 
 ## 📃 Write-Up
 
-A LaTeX document detailing the Brachistochrone problem, one of its solutions, and the results of the computational model is [availible here](https://jazevedo.me/projects/brachistochrone-simulator/report.pdf). It was originally produced to be pasted onto a poster for the [UTC Mathematics Poster Competition](https://www.utc.edu/mathematics/pdfs/poster-competition-rules-2018.pdf) in 2018.
+A LaTeX document detailing the Brachistochrone problem, one of its solutions, and the results of the computational model is [available here](https://jazevedo.me/projects/brachistochrone-simulator/report.pdf). It was originally produced to be pasted onto a poster for the [UTC Mathematics Poster Competition](https://www.utc.edu/mathematics/pdfs/poster-competition-rules-2018.pdf) in 2018.
 
 ## 🔗 Dependencies
 
